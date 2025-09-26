@@ -47,4 +47,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
+    // Added for SMS Retriever API (Auto OTP Read)
+    implementation("com.google.android.gms:play-services-auth:21.1.0")
+
 }

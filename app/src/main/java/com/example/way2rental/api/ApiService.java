@@ -48,7 +48,7 @@ public interface ApiService {
 
     @POST("public/customers/edit/profile/{identifier}")
     Call<APIResponse<StatusResponse>> editUserProfile(
-            @Path("identifier") String identifier, // Identifier now a path parameter
+            @Path("identifier") String identifier,
             @Body EditProfileRequest request
     );
 }
