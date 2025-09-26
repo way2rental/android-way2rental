@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="16dp">
+
+        <!-- Search Bar -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/searchBarCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="12dp"
+                android:hint="Search for rentals..."
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="16dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Image Slider / Banner Placeholder -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/bannerSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Categories Section -->
+        <TextView
+            android:id="@+id/tvCategoriesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Categories"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_category" />
+
+        <!-- Popular Rentals Section -->
+        <TextView
+            android:id="@+id/tvPopularRentalsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Popular Rentals"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPopularRentals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clipToPadding="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_rental" />
+        <!-- Ensure rvPopularRentals is set for horizontal scroll -->
+        <!-- Allows padding to not cut off shadows/edges for rvPopularRentals -->
+        <!-- Adjust padding if item_rental has its own start margin for rvPopularRentals -->
+        <!-- Adjust padding if item_rental has its own end margin for rvPopularRentals -->
+
+        <!-- Deals of the Day Section -->
+        <TextView
+            android:id="@+id/tvDealsOfTheDayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Deals of the Day"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDealsOfTheDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clipToPadding="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_rental" />
+        <!-- rvDealsOfTheDay: Horizontal scroll -->
+        <!-- rvDealsOfTheDay: Reusing item_rental layout -->
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

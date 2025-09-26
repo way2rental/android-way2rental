@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/pb_profile_loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/profile_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"> <!-- Start invisible, make visible after load -->
+
+            <!-- Profile Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="32dp"
+                android:paddingBottom="24dp"
+                android:background="?attr/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_profile_avatar"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@android:drawable/sym_def_app_icon"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Profile Picture"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    tools:text="User Name"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    tools:text="user.email@example.com"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    tools:text="Phone: +1234567890"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Menu Items -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <!-- Item: Edit Profile -->
+                <RelativeLayout
+                    android:id="@+id/menu_item_edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="24dp">
+                    <ImageView
+                        android:id="@+id/icon_edit_profile"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="24dp"
+                        android:src="@android:drawable/ic_menu_edit"
+                        app:tint="?attr/colorOnSurface"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/chevron_edit_profile"
+                        android:layout_toEndOf="@id/icon_edit_profile"
+                        android:layout_centerVertical="true"
+                        android:text="Edit Profile"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="?android:attr/textColorPrimary"/>
+                    <ImageView
+                        android:id="@+id/chevron_edit_profile"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_next"
+                        app:tint="?android:attr/textColorSecondary"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginHorizontal="24dp"/>
+
+                <!-- Item: Account Settings -->
+                <RelativeLayout
+                    android:id="@+id/menu_item_account_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="24dp">
+                    <ImageView
+                        android:id="@+id/icon_account_settings"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="24dp"
+                        android:src="@android:drawable/ic_menu_manage"
+                        app:tint="?attr/colorOnSurface"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/chevron_account_settings"
+                        android:layout_toEndOf="@id/icon_account_settings"
+                        android:layout_centerVertical="true"
+                        android:text="Account Settings"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="?android:attr/textColorPrimary"/>
+                    <ImageView
+                        android:id="@+id/chevron_account_settings"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_next"
+                        app:tint="?android:attr/textColorSecondary"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginHorizontal="24dp"/>
+
+                <!-- Item: My Listings -->
+                <RelativeLayout
+                    android:id="@+id/menu_item_my_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="24dp">
+                    <ImageView
+                        android:id="@+id/icon_my_listings"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="24dp"
+                        android:src="@android:drawable/ic_menu_agenda"
+                        app:tint="?attr/colorOnSurface"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/chevron_my_listings"
+                        android:layout_toEndOf="@id/icon_my_listings"
+                        android:layout_centerVertical="true"
+                        android:text="My Listings"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="?android:attr/textColorPrimary"/>
+                    <ImageView
+                        android:id="@+id/chevron_my_listings"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_next"
+                        app:tint="?android:attr/textColorSecondary"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginHorizontal="24dp"/>
+
+                <!-- Item: Notifications -->
+                <RelativeLayout
+                    android:id="@+id/menu_item_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="24dp">
+                    <ImageView
+                        android:id="@+id/icon_notifications"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="24dp"
+                        android:src="@android:drawable/ic_popup_reminder"
+                        app:tint="?attr/colorOnSurface"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/chevron_notifications"
+                        android:layout_toEndOf="@id/icon_notifications"
+                        android:layout_centerVertical="true"
+                        android:text="Notifications"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="?android:attr/textColorPrimary"/>
+                    <ImageView
+                        android:id="@+id/chevron_notifications"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_next"
+                        app:tint="?android:attr/textColorSecondary"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginHorizontal="24dp"/>
+
+                <!-- Item: Help & Support -->
+                <RelativeLayout
+                    android:id="@+id/menu_item_help_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="24dp">
+                    <ImageView
+                        android:id="@+id/icon_help_support"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="24dp"
+                        android:src="@android:drawable/ic_menu_help"
+                        app:tint="?attr/colorOnSurface"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/chevron_help_support"
+                        android:layout_toEndOf="@id/icon_help_support"
+                        android:layout_centerVertical="true"
+                        android:text="Help &amp; Support"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="?android:attr/textColorPrimary"/>
+                    <ImageView
+                        android:id="@+id/chevron_help_support"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_next"
+                        app:tint="?android:attr/textColorSecondary"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginHorizontal="24dp"/>
+
+                <!-- Item: Logout -->
+                <RelativeLayout
+                    android:id="@+id/menu_item_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="24dp">
+                    <ImageView
+                        android:id="@+id/icon_logout"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="24dp"
+                        android:src="@android:drawable/ic_lock_power_off"
+                        app:tint="?attr/colorError"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/chevron_logout"
+                        android:layout_toEndOf="@id/icon_logout"
+                        android:layout_centerVertical="true"
+                        android:text="Logout"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="?attr/colorError"/>
+                    <ImageView
+                        android:id="@+id/chevron_logout"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_next"
+                        app:tint="?android:attr/textColorSecondary"/>
+                </RelativeLayout>
+                 <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginHorizontal="24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

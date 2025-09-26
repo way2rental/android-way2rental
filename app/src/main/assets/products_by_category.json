@@ -1,0 +1,251 @@
+{
+  "House": [
+    {
+      "id": 301,
+      "name": "Spacious Family House with Garden",
+      "type": "HOUSE",
+      "status": "AVAILABLE",
+      "description": "A beautiful and spacious house perfect for families, featuring a large garden, multiple bedrooms, and a quiet neighborhood. Close to schools and parks.",
+      "pricing": {
+        "basePrice": 45000.0,
+        "securityDeposit": 90000.0,
+        "priceUnit": "PER_MONTH",
+        "negotiable": true,
+        "cleaningFee": 1500.0,
+        "maintenanceFee": 0.0,
+        "discountPercent": 0.0
+      },
+      "productLocation": {
+        "addressLine1": "12B, Rose Villa, Sunshine Colony",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "zipCode": "462003",
+        "coordinates": {
+          "lat": 23.2599,
+          "lng": 77.4126
+        }
+      },
+      "owner": {
+        "id": 501,
+        "contactNumber": "+919112233445",
+        "verified": true
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "isPrimary": true
+          }
+        ],
+        "videos": []
+      },
+      "meta": {
+        "tags": ["house", "family-friendly", "garden", "spacious"],
+        "facilities": ["Parking", "Garden", "Pet Friendly", "24hr Water Supply", "Power Backup"],
+        "rules": ["no_smoking_inside", "pet_policy_flexible"],
+        "nearby": {
+          "School": "1km",
+          "Park": "500m",
+          "Market": "1.5km"
+        },
+        "attributes": {
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "floor": 0,
+          "areaSqFt": 2800,
+          "furnishingStatus": "UNFURNISHED",
+          "ageOfProperty": "5 years",
+          "facing": "NORTH_EAST"
+        }
+      },
+      "reviews": {
+        "avgRating": 4.6,
+        "totalReviews": 30,
+        "list": []
+      },
+      "availability": {
+        "from": "2024-08-20",
+        "to": "2025-08-19"
+      },
+      "seo": {
+        "title": "Spacious 4BHK Family House with Garden in Bhopal",
+        "description": "Rent a beautiful 4BHK house in Sunshine Colony, Bhopal. Unfurnished, large garden, pet-friendly. Ideal for families.",
+        "slug": "spacious-family-house-bhopal-301",
+        "keywords": ["house rent bhopal", "family house bhopal", "sunshine colony"],
+        "language": "en"
+      },
+      "featured": false,
+      "timestamps": {
+        "createdAt": "2024-07-20T11:00:00Z",
+        "updatedAt": "2024-07-27T15:00:00Z"
+      }
+    }
+  ],
+  "1BHK": [
+    {
+      "id": 302,
+      "name": "Compact 1BHK for Students/Bachelors",
+      "type": "ONE_BHK_FLAT",
+      "status": "AVAILABLE",
+      "description": "An affordable and compact 1BHK flat, perfect for students or bachelors. Located near coaching centers and has good connectivity.",
+      "pricing": {
+        "basePrice": 8000.0,
+        "securityDeposit": 16000.0,
+        "priceUnit": "PER_MONTH",
+        "negotiable": false,
+        "cleaningFee": 0.0,
+        "maintenanceFee": 200.0,
+        "discountPercent": 0.0
+      },
+      "productLocation": {
+        "addressLine1": "Room 10, Student Housing Complex, Vijay Nagar",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "zipCode": "452010",
+        "coordinates": {
+          "lat": 22.7533,
+          "lng": 75.8937
+        }
+      },
+      "owner": {
+        "id": 502,
+        "contactNumber": "+919556677889",
+        "verified": false
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "isPrimary": true
+          }
+        ],
+        "videos": []
+      },
+      "meta": {
+        "tags": ["1bhk", "student-friendly", "bachelor", "affordable", "vijay-nagar"],
+        "facilities": ["WiFi", "2-Wheeler Parking", "Study Table"],
+        "rules": ["students_only", "no_guests_after_10pm"],
+        "nearby": {
+          "Coaching Center": "200m",
+          "Mess/Tiffin": "100m",
+          "Bus Stop": "300m"
+        },
+        "attributes": {
+          "bedrooms": 1,
+          "bathrooms": 1,
+          "floor": 2,
+          "areaSqFt": 500,
+          "furnishingStatus": "SEMI_FURNISHED",
+          "ageOfProperty": "7 years",
+          "facing": "WEST"
+        }
+      },
+      "reviews": {
+        "avgRating": 4.0,
+        "totalReviews": 45,
+        "list": []
+      },
+      "availability": {
+        "from": "2024-08-01",
+        "to": "2025-07-31"
+      },
+      "seo": {
+        "title": "Affordable 1BHK for Students in Vijay Nagar, Indore",
+        "description": "Rent a compact 1BHK in Vijay Nagar, Indore. Semi-furnished, ideal for students and bachelors. Near coaching centers.",
+        "slug": "1bhk-student-vijay-nagar-indore-302",
+        "keywords": ["1bhk student indore", "vijay nagar rent", "bachelor flat indore"],
+        "language": "en"
+      },
+      "featured": true,
+      "timestamps": {
+        "createdAt": "2024-07-22T08:30:00Z",
+        "updatedAt": "2024-07-28T18:00:00Z"
+      }
+    }
+  ],
+  "Apartment": [
+    {
+      "id": 303,
+      "name": "Modern 2BHK Apartment with Amenities",
+      "type": "TWO_BHK_FLAT", 
+      "status": "BOOKED",
+      "description": "A modern 2BHK apartment in a well-maintained complex with a swimming pool, gym, and clubhouse. Great for small families or working professionals.",
+      "pricing": {
+        "basePrice": 25000.0,
+        "securityDeposit": 50000.0,
+        "priceUnit": "PER_MONTH",
+        "negotiable": false,
+        "cleaningFee": 500.0,
+        "maintenanceFee": 1500.0,
+        "discountPercent": 0.0
+      },
+      "productLocation": {
+        "addressLine1": "C-401, Elite Towers, Scheme No. 140",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "zipCode": "452010",
+        "coordinates": {
+          "lat": 22.7500,
+          "lng": 75.8900
+        }
+      },
+      "owner": {
+        "id": 503,
+        "contactNumber": "+919334455667",
+        "verified": true
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "isPrimary": true
+          }
+        ],
+        "videos": []
+      },
+      "meta": {
+        "tags": ["apartment", "2bhk", "modern-living", "gated-community"],
+        "facilities": ["Swimming Pool", "Gymnasium", "Clubhouse", "Lift", "Security", "Parking"],
+        "rules": ["standard_society_rules", "no_subletting"],
+        "nearby": {
+          "Supermarket": "300m",
+          "Hospital": "2km",
+          "Ring Road": "1km"
+        },
+        "attributes": {
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "floor": 4,
+          "areaSqFt": 1100,
+          "furnishingStatus": "SEMI_FURNISHED",
+          "ageOfProperty": "2 years",
+          "facing": "EAST"
+        }
+      },
+      "reviews": {
+        "avgRating": 4.7,
+        "totalReviews": 60,
+        "list": []
+      },
+      "availability": {
+        "from": "2024-09-15",
+        "to": "2025-09-14"
+      },
+      "seo": {
+        "title": "Modern 2BHK Apartment in Scheme 140, Indore | Elite Towers",
+        "description": "Rent a 2BHK apartment in Elite Towers, Scheme 140, Indore. Semi-furnished, with pool, gym, and clubhouse. Currently Booked.",
+        "slug": "modern-2bhk-apartment-indore-scheme140-303",
+        "keywords": ["2bhk apartment indore", "scheme 140 rent", "elite towers flat"],
+        "language": "en"
+      },
+      "featured": true,
+      "timestamps": {
+        "createdAt": "2024-07-15T16:00:00Z",
+        "updatedAt": "2024-07-29T09:00:00Z"
+      }
+    }
+  ]
+}

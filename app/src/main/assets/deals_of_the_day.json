@@ -1,0 +1,167 @@
+[
+  {
+    "id": 201,
+    "name": "Hot Deal: Modern 2BHK City View",
+    "type": "TWO_BHK_FLAT",
+    "status": "AVAILABLE",
+    "description": "Exclusive deal on a stunning 2BHK apartment with breathtaking city views. Features modern interiors, ample sunlight, and access to premium building amenities. Located in a prime area with easy access to transport and markets.",
+    "pricing": {
+      "basePrice": 22000.0,
+      "securityDeposit": 44000.0,
+      "priceUnit": "PER_MONTH",
+      "negotiable": false,
+      "cleaningFee": 0.0,
+      "maintenanceFee": 1500.0,
+      "discountPercent": 12.0
+    },
+    "productLocation": {
+      "addressLine1": "Unit 1505, Sky Tower, AB Road",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "zipCode": "452010",
+      "coordinates": {
+        "lat": 22.7533,
+        "lng": 75.8937
+      }
+    },
+    "owner": {
+      "id": 301,
+      "contactNumber": "+919123456780",
+      "verified": true
+    },
+    "media": {
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "isPrimary": false
+        }
+      ],
+      "videos": []
+    },
+    "meta": {
+      "tags": ["hot-deal", "city-view", "luxury-living", "limited-time-offer"],
+      "facilities": ["Parking", "Lift", "Power Backup", "Security Guard", "Gymnasium", "Swimming Pool"],
+      "rules": ["no_smoking_inside", "small_pets_considered"],
+      "nearby": {
+        "Shopping Mall": "500m",
+        "Restaurant Hub": "200m",
+        "Hospital": "1.5km"
+      },
+      "attributes": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "floor": 15,
+        "areaSqFt": 1250,
+        "furnishingStatus": "SEMI_FURNISHED",
+        "ageOfProperty": "1 year",
+        "facing": "NORTH_EAST"
+      }
+    },
+    "reviews": {
+      "avgRating": 4.7,
+      "totalReviews": 35,
+      "list": []
+    },
+    "availability": {
+      "from": "2024-08-15",
+      "to": "2025-08-14"
+    },
+    "seo": {
+      "title": "Hot Deal: Modern 2BHK City View Apartment in Indore",
+      "description": "Rent a luxury 2BHK semi-furnished apartment in Sky Tower, AB Road, Indore. Special discount available for a limited time.",
+      "slug": "hot-deal-2bhk-city-view-indore-201",
+      "keywords": ["2bhk rent indore", "luxury apartment indore", "ab road flat deal"],
+      "language": "en"
+    },
+    "featured": true,
+    "timestamps": {
+      "createdAt": "2024-07-29T08:00:00Z",
+      "updatedAt": "2024-07-29T09:15:00Z"
+    }
+  },
+  {
+    "id": 202,
+    "name": "Weekend Special: Charming Studio Getaway",
+    "type": "STUDIO_APARTMENT",
+    "status": "AVAILABLE",
+    "description": "Perfect weekend getaway! This charming studio apartment offers a cozy and affordable stay. Fully furnished with all essentials. Book now for a special weekend rate.",
+    "pricing": {
+      "basePrice": 1500.0,
+      "securityDeposit": 3000.0,
+      "priceUnit": "PER_DAY",
+      "negotiable": true,
+      "cleaningFee": 200.0,
+      "maintenanceFee": 0.0,
+      "discountPercent": 5.0
+    },
+    "productLocation": {
+      "addressLine1": "Cottage 3, Tranquil Enclave, Near Lake Road",
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "zipCode": "462001",
+      "coordinates": {
+        "lat": 23.2599,
+        "lng": 77.4126
+      }
+    },
+    "owner": {
+      "id": 302,
+      "contactNumber": "+919000011111",
+      "verified": false
+    },
+    "media": {
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "isPrimary": true
+        }
+      ],
+      "videos": []
+    },
+    "meta": {
+      "tags": ["weekend-getaway", "studio", "affordable-stay", "bhopal-deals"],
+      "facilities": ["WiFi", "Fully Furnished", "Kitchenette", "AC"],
+      "rules": ["max_2_guests", "no_parties"],
+      "nearby": {
+        "Lake View Point": "300m",
+        "Cafe": "100m"
+      },
+      "attributes": {
+        "bedrooms": 1, 
+        "bathrooms": 1,
+        "floor": 1,
+        "areaSqFt": 400,
+        "furnishingStatus": "FULLY_FURNISHED",
+        "ageOfProperty": "3 years",
+        "facing": "WEST"
+      }
+    },
+    "reviews": {
+      "avgRating": 4.3,
+      "totalReviews": 22,
+      "list": []
+    },
+    "availability": {
+      "from": "2024-08-01",
+      "to": "2024-12-31"
+    },
+    "seo": {
+      "title": "Weekend Special Studio Apartment in Bhopal",
+      "description": "Affordable and charming studio for a weekend getaway in Bhopal. Fully furnished, near lake.",
+      "slug": "weekend-special-studio-bhopal-202",
+      "keywords": ["studio bhopal", "weekend rent bhopal", "affordable stay bhopal"],
+      "language": "en"
+    },
+    "featured": true,
+    "timestamps": {
+      "createdAt": "2024-07-28T11:00:00Z",
+      "updatedAt": "2024-07-29T10:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"> <!-- Added tools namespace -->
+
+    <!-- Base application theme. -->
+    <style name="Theme.Way2Rental" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item> <!-- Standard: Color for text/icons on primary color -->
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item> <!-- Standard: Darker variant of secondary -->
+        <item name="colorOnSecondary">@color/black</item> <!-- Standard: Color for text/icons on secondary color -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Theme for Activities that provide their own Toolbar -->
+    <style name="Theme.Way2Rental.NoActionBar" parent="Theme.Way2Rental">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Theme for AppBar (Toolbar) styling -->
+    <style name="Theme.Way2Rental.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Theme for Popup menus (e.g., overflow menu in Toolbar) -->
+    <style name="Theme.Way2Rental.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Styles for Product Detail Screen -->
+    <style name="DetailSectionTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item> <!-- This marginTop might be redundant if DetailSectionContainer handles padding -->
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="DetailLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="DetailValue" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item> <!-- Changed to wrap_content, can be match_parent in LinearLayout if needed -->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+    <!-- New Styles for Enhanced Product Detail Screen -->
+    <style name="DetailSectionContainer">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="DetailSectionDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item> <!-- CHANGED FROM wrap_content -->
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="DetailValue.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

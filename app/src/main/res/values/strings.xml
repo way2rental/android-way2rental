@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Way2Rental</string>
+    <string name="title_activity_product_list">Product Listings</string>
+    <string name="title_activity_product_detail">Product Details</string>
+</resources>

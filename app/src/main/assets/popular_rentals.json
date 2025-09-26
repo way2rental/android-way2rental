@@ -1,0 +1,168 @@
+[
+  {
+    "id": 101,
+    "name": "Popular Choice: Sunny 3BHK Villa",
+    "type": "VILLA",
+    "status": "AVAILABLE",
+    "description": "A highly sought-after 3BHK villa with ample sunlight, a private garden, and modern amenities. Ideal for families seeking comfort and space.",
+    "pricing": {
+      "basePrice": 35000.0,
+      "securityDeposit": 70000.0,
+      "priceUnit": "PER_MONTH",
+      "negotiable": true,
+      "cleaningFee": 1000.0,
+      "maintenanceFee": 2000.0,
+      "discountPercent": 5.0
+    },
+    "productLocation": {
+      "addressLine1": "Villa 12, Green Meadows Society, Bypass Road",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "zipCode": "452016",
+      "coordinates": {
+        "lat": 22.7179,
+        "lng": 75.8837
+      }
+    },
+    "owner": {
+      "id": 401,
+      "contactNumber": "+919988776655",
+      "verified": true
+    },
+    "media": {
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "isPrimary": true
+        },
+        {
+          "url": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "isPrimary": false
+        }
+      ],
+      "videos": []
+    },
+    "meta": {
+      "tags": ["popular", "villa", "family-home", "garden"],
+      "facilities": ["Parking", "Power Backup", "Security Guard", "Private Garden", "Modular Kitchen"],
+      "rules": ["families_only", "no_commercial_use"],
+      "nearby": {
+        "International School": "2km",
+        "SuperMarket": "1km",
+        "Hospital": "3km"
+      },
+      "attributes": {
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "floor": 0,
+        "areaSqFt": 2200,
+        "furnishingStatus": "SEMI_FURNISHED",
+        "ageOfProperty": "3 years",
+        "facing": "EAST"
+      }
+    },
+    "reviews": {
+      "avgRating": 4.8,
+      "totalReviews": 55,
+      "list": []
+    },
+    "availability": {
+      "from": "2024-09-01",
+      "to": "2025-08-31"
+    },
+    "seo": {
+      "title": "Popular 3BHK Villa for Rent in Indore | Green Meadows",
+      "description": "Rent a spacious and sunny 3BHK villa in Green Meadows, Indore. Semi-furnished, private garden, modern amenities. Ideal for families.",
+      "slug": "popular-3bhk-villa-indore-green-meadows-101",
+      "keywords": ["3bhk villa indore", "popular rental indore", "bypass road house"],
+      "language": "en"
+    },
+    "featured": true,
+    "timestamps": {
+      "createdAt": "2024-07-25T14:00:00Z",
+      "updatedAt": "2024-07-28T10:30:00Z"
+    }
+  },
+  {
+    "id": 102,
+    "name": "City Center 1BHK Apartment - High Demand",
+    "type": "ONE_BHK_FLAT",
+    "status": "AVAILABLE",
+    "description": "A compact and well-maintained 1BHK apartment in the bustling city center. Always in high demand due to its prime location and affordability.",
+    "pricing": {
+      "basePrice": 15000.0,
+      "securityDeposit": 30000.0,
+      "priceUnit": "PER_MONTH",
+      "negotiable": false,
+      "cleaningFee": 300.0,
+      "maintenanceFee": 500.0,
+      "discountPercent": 0.0
+    },
+    "productLocation": {
+      "addressLine1": "Flat 7A, Metro View Residency, Palasia",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "zipCode": "452001",
+      "coordinates": {
+        "lat": 22.7200,
+        "lng": 75.8590
+      }
+    },
+    "owner": {
+      "id": 402,
+      "contactNumber": "+919776655433",
+      "verified": false
+    },
+    "media": {
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "isPrimary": true
+        }
+      ],
+      "videos": []
+    },
+    "meta": {
+      "tags": ["popular", "1bhk", "city-center", "affordable"],
+      "facilities": ["Lift", "Security Guard", "24hr Water"],
+      "rules": ["bachelors_welcome", "no_pets_allowed"],
+      "nearby": {
+        "Palasia Square": "200m",
+        "Restaurant Hub": "100m",
+        "Bus Stop": "50m"
+      },
+      "attributes": {
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "floor": 7,
+        "areaSqFt": 700,
+        "furnishingStatus": "UNFURNISHED",
+        "ageOfProperty": "5 years",
+        "facing": "NORTH"
+      }
+    },
+    "reviews": {
+      "avgRating": 4.5,
+      "totalReviews": 82,
+      "list": []
+    },
+    "availability": {
+      "from": "2024-08-10",
+      "to": "2025-08-09"
+    },
+    "seo": {
+      "title": "High Demand 1BHK Apartment in Palasia, Indore City Center",
+      "description": "Rent an affordable 1BHK apartment in Palasia, Indore. Prime city center location, unfurnished. Perfect for bachelors or small families.",
+      "slug": "popular-1bhk-palasia-indore-102",
+      "keywords": ["1bhk indore", "palasia flat rent", "city center apartment"],
+      "language": "en"
+    },
+    "featured": false,
+    "timestamps": {
+      "createdAt": "2024-07-26T09:00:00Z",
+      "updatedAt": "2024-07-29T11:00:00Z"
+    }
+  }
+]

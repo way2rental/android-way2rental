@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Default placeholder -->
+        <ImageView
+            android:id="@+id/ivRentalItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/ic_image_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Slightly larger for new model name -->
+            <TextView
+                android:id="@+id/tvRentalItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginBottom="4dp"
+                tools:text="Modern 3BHK Flat in Palasia" />
+
+            <!-- Slightly larger for price -->
+            <TextView
+                android:id="@+id/tvRentalItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                tools:text="₹20000 per month" />
+
+            <TextView
+                android:id="@+id/tvRentalItemLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:layout_marginTop="4dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Plot 25, Palasia Square, Indore" />
+
+            <!-- Section for Key Attributes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <!-- Placeholder icon -->
+                <TextView
+                    android:id="@+id/tvRentalItemBeds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceCaption"
+                    android:drawableStart="@drawable/ic_bed"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    tools:text="3 Beds" />
+
+                <!-- Placeholder icon -->
+                <TextView
+                    android:id="@+id/tvRentalItemBaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceCaption"
+                    android:drawableStart="@drawable/ic_bath"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    tools:text="2 Baths" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
